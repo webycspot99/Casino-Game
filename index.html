@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Casino</title>
+</head>
+<body>
+	<nav>
+		<h2>Casino</h2>
+		<ul>
+			<li id="balance"></li>
+			<li><a href="#charge">charge your balance</a></li>
+		</ul>
+	</nav>
+	<section>
+		<div class="main">
+			<p id="winner"></p>
+			<div class="numbers">
+				<table>
+				  <table>
+					<tbody>
+						<tr>
+							<td id="number1">0</td>
+							<td id="number2">0</td>
+							<td id="number3">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<select name="zarib" id="zarib">
+			    <option value="1">1x</option>
+			    <option value="2">2x</option>
+			    <option value="5">5x</option>
+			    <option value="10">10x</option>
+			  </select>
+			<button id="btn" class="btn">submit</button>
+		</div>
+	</section>
+	<div id="charge" class="title">
+		<h2>Charge your account</h2>
+		<h5>just click on the amount you want</h5>
+	</div>
+	<div class="cards">
+		<div class="card" onclick="B20()">20$</div>
+		<div class="card" onclick="B50()">50$</div>
+		<div class="card" onclick="B80()">80$</div>
+		<div class="card" onclick="B100()">100$</div>
+		<div class="card" onclick="B500()">500$</div>
+	</div>
+</body>
+<script src="app.js"></script>
+</html>

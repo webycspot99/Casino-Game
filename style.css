@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+body {
+    background-color:  hsl(0, 0%, 98%);
+}
+nav{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: hsl(0, 0%, 98%);
+	z-index: 2;
+}
+ul{
+	display: flex;
+	list-style: none;
+	font-weight: 600;
+}
+ul li{
+	margin: 0 10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	transition: .5s;
+}
+a:hover{
+	color: hsl(0,0%,40%);
+}
+section{
+	height: 100vh;
+	position: relative;
+}
+
+.main{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+select {
+	background: hsl(0,0%,10%);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 14px;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+}
+.btn{
+	background: hsl(0,0%,10%);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 14px;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+}
+.disable{
+	background: hsl(0,0%,70%);
+	padding: 10px 15px;
+	border: none;
+	border-radius: 14px;
+	color: white;
+	font-weight: 600;
+	cursor: pointer;
+	z-index: 100;
+}
+.numbers {
+	display: flex;
+	justify-content: center;
+}
+table {
+	margin-bottom: 2rem;
+	border:1px solid #b3adad;
+	border-collapse:collapse;
+}
+table td {
+	width: 100px;
+	border:1px solid #b3adad;
+	text-align:center;
+	padding:5px;
+	background: #ffffff;
+	color: #313030;
+	font-size: 5rem;
+}
+
+.title{
+	text-align: center;
+	margin: 5rem 0;
+}
+.title h2{
+	font-size: 1.6rem;
+}
+.title h5{
+	color: hsl(0,0%,50%);
+}
+.cards{
+	max-width: 968px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	margin-bottom: 100px;
+}
+.card{
+	background: hsl(0,0%,80%);
+	border-radius: 20px;
+	width: 200px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	cursor: pointer;
+	transition: .5s;
+	margin: 10px auto;
+}
+.card:hover{
+	background: hsl(0,0%,60%);
+}
+#balance::after{
+	content: '$';
+}
+
+@media only screen and (max-width: 800px) {
+ .cards{
+ 	grid-template-columns: repeat(2,1fr);
+ }
+ table td {
+	min-width: 80px;
+}
+
+}
+@media only screen and (max-width: 300px) {
+ .cards{
+ 	grid-template-columns: repeat(1,1fr);
+ }
+  table td {
+	min-width: 60px;
+}
+.card{
+	width: 100px;
+	height: 60px;
+	margin: 0 10px;
+}
+
+}
